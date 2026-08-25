@@ -1,0 +1,9 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+
+# Local browser and test artifacts
+.*-check/
+*-check.png

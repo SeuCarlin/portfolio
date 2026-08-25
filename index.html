@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Henrique Marques — Ilustração, Design e Motion Graphics."
+    />
+    <title>HENRIQUE MARQUES ART</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="gallery-data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <canvas class="film-background" aria-hidden="true"></canvas>
+    <div class="chalk-dust" aria-hidden="true"></div>
+    <header class="site-header">
+      <a href="#inicio" class="site-logo">HM<span>ART</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#trabalhos">Trabalhos</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero chalk-section" id="inicio">
+        <div class="hero__content reveal is-visible">
+          <h1><span>HENRIQUE</span> <span>MARQUES</span> <span>ART</span></h1>
+          <p><span>Ilustração / Designer /</span> <span>Motion Graphics</span></p>
+          <svg class="chalk-line chalk-line--hero" viewBox="0 0 760 80" aria-hidden="true">
+            <path d="M12 50C148 29 241 66 381 47s244 14 367-10" />
+            <path d="M31 62c176-13 371 9 681-17" />
+          </svg>
+        </div>
+        <a class="hero__scroll" href="#sobre" aria-label="Ir para a seção Sobre mim">↓</a>
+      </section>
+
+      <section class="about chalk-section" id="sobre">
+        <div class="about__portrait reveal">
+          <div class="photo-frame">
+            <img src="assets/art/portrait.jpg" alt="Henrique Marques" />
+          </div>
+          <img class="about__sticker" src="assets/art/sticker.gif" alt="" aria-hidden="true" />
+          <span class="about__arrow" aria-hidden="true">↖</span>
+          <span class="about__note">esse sou eu!</span>
+        </div>
+
+        <div class="about__content reveal">
+          <p class="kicker">Sobre mim:</p>
+          <h2>Ilustrador e<br />artista visual.</h2>
+          <svg class="chalk-line chalk-line--about" viewBox="0 0 600 100" aria-hidden="true">
+            <path d="M8 61c91-24 207 24 322-3 96-22 166 10 262-8" />
+          </svg>
+          <div class="about__text">
+            <p>
+              ilustrador e artista visual especializado na criação de personagens
+              para projetos autorais, campanhas publicitárias e desenvolvimento de mascotes.
+            </p>
+            <p>
+              Também possuo experiência em produção audiovisual, incluindo edição de vídeo,
+              motion design, visualizers e overlays, além da criação de assets para jogos digitais.
+            </p>
+            <p>
+              Meu trabalho combina ilustração, movimento e narrativa visual para transformar
+              ideias em projetos com identidade e personalidade.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio chalk-section" id="trabalhos">
+        <header class="portfolio__heading reveal">
+          <p class="kicker">Meu portfólio</p>
+          <h2>Conheça meus<br />trabalhos!</h2>
+          <svg class="chalk-circle" viewBox="0 0 870 300" aria-hidden="true">
+            <path d="M432 17C179 6 35 46 25 137 13 252 234 284 464 273c231-11 401-56 386-146C835 37 652 11 432 17Z" />
+            <path d="M444 26C204 14 49 58 41 143c-9 96 189 130 421 118 218-11 367-53 372-130 5-85-181-94-390-105Z" />
+          </svg>
+        </header>
+
+        <div class="gallery-catalog" id="gallery-catalog"></div>
+      </section>
+
+      <footer class="footer chalk-section">
+        <p class="footer__eyebrow">HENRIQUE MARQUES ART</p>
+        <h2>Vamos criar<br />algo juntos?</h2>
+        <p>Ilustração / Designer / Motion Graphics</p>
+        <div class="footer__bottom">
+          <span>© <span id="year"></span></span>
+          <a href="#inicio">voltar ao início ↑</a>
+        </div>
+      </footer>
+    </main>
+
+    <dialog class="lightbox" aria-label="Visualização ampliada da arte">
+      <button class="lightbox__close" type="button" aria-label="Fechar">×</button>
+      <figure>
+        <img src="" alt="" />
+        <figcaption></figcaption>
+      </figure>
+    </dialog>
+  </body>
+</html>
